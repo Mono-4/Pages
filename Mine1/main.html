@@ -1,0 +1,153 @@
+<!DCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="ガイヨウ">
+        <link rel="stylesheet" href="main.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        
+        
+        <script src="processing.js"></script>
+<script type="text/processing" data-processing-target="processing-canvas">
+ 
+int i=0;
+int count=0;
+void setup() {
+  size(1200, 100);
+  frameRate(4);
+}
+
+void draw() {
+  
+  fill(255, 50);
+  
+  noStroke();
+  rect(0, 0, width, height);
+   fill(0, 100);
+  ellipse(mouseX,mouseY,50,50);
+   fill(50,80);
+   ellipse(pmouseX,pmouseY,30,30);
+  
+  
+  translate(random(width), random(height));
+  rotate(random(PI));
+  scale(random(0.1, 0.5));
+ 
+  
+  translate(-50, -50); 
+  
+  if(i==0){
+    fill(255,50);
+    
+    i=-1;
+  }else{
+  fill(0,70);
+  i=0;
+  }
+  stroke(0);
+  rect(0,0,100,100);
+  if(++count==1){
+    line(random(2000),random(2000),random(2000),random(2000));
+    count=0;
+  }
+  
+  
+  
+}
+ 
+</script>
+        
+        
+<canvas id="processing-canvas"></canvas>
+<link rel="shortcut icon" href ="icon/icon.png">
+        <title>Y.H</title>
+    </head>
+    <body>
+        
+        
+       
+    
+        
+        
+       
+         <img src="icon/hagu2.png" class="hagu1">
+         
+         <img src="icon/hagu2.png" class="hagu2">
+        
+      
+        
+        
+        
+        
+        <h1>Yusui Hoshino</h1>
+        <br>
+        <br>
+        <hr color="black" size="4px" class="under_hagu">
+
+        
+     
+        <span class="h">&nbsp;1.Profile&nbsp;</span>
+       
+        
+        <br>
+        <ul>
+            <li>University of Aizu student (7/39)</li>
+            <li>Circle --- Handicraft, Photo</li>
+            <li>Favorite Movie --- Interstellar</li>
+            <li>Favorite Novel --- Otsuichi</li>
+            <li>Favorite Singer --- amazarashi, SEKAI NO OWARI</li>
+        </ul>
+        <br>
+
+        
+        
+        
+        <span class="h">&nbsp;2.Links to the works&nbsp;</span>
+        
+        <br><br>
+        <ul class="notdot">
+            <li>
+                <a href="blender.html">
+                    <span class="link"><img src="icon/blender3.png" width=60px>&nbsp;Blender / 3D modeling</span> 
+                    <img src="icon/hagu2.png" class="hagu3">
+                </a>
+            </li>
+            <br>
+            
+            <li>
+                <a href="unity.html">
+                    <span class="link"><img src="icon/unity2.png" width=50px>&nbsp;Unity / game&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                      <img src="icon/hagu2.png" class="hagu3">
+                </a>
+            </li>
+            <br>
+            
+            <li>
+                <a href="picture.html">
+                    <span class="link"><img src="icon/3-.png" width="50px" height="50px">&nbsp;Picture</span>
+                      <img src="icon/hagu2.png" class="hagu3">
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="web.html">
+                    <span class="link"><img src="icon/dog.png" width="50px" height="50px">&nbsp;Web</span>
+                      <img src="icon/hagu2.png" class="hagu3">
+                </a>
+            </li>
+        </ul>
+<br>
+        <br>
+        <br>
+        <br>
+        
+    
+      
+    
+
+       
+
+    </body>
+    </html>

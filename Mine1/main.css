@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+/* =========================================main   */
+body {
+
+    font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
+    font-size: 25px;
+    background-color:white;
+   
+    
+    
+}
+
+.h {
+   
+    color: white;
+    font-size: 25px;
+     margin-left:-10px;
+    background: black;
+transition-duration:1.5s;
+transition-property:all;
+transition-timing-function:ease;
+transition-delay: 0s;
+}
+
+.h:hover{
+   padding-left:100px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    margin: -8px -8px -20px -8px;
+    background-color: black;
+    color:white;
+    font-weight:normal;
+ 
+    
+    animation-name: buru;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+
+  animation-iteration-count: infinite;　
+  animation-direction: reverse;
+  animation-fill-mode: none; 
+  animation-play-state: running;
+}
+@keyframes buru {
+
+ 0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1.5deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1.5deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.notdot li {
+    list-style-type: none;
+}
+
+.link {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    
+    border-collapse: collapse;
+    font-size: 40px;
+    padding: 22px 15px 17px 100px;
+    margin-left: -140px;
+}
+
+ul image {
+    float: left;
+    padding-left: -50px;
+    margin-top: -50px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: dimgray;
+    color: white;
+    
+    
+    animation-name: buru;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+
+  animation-iteration-count: infinite;　
+  animation-direction: reverse;
+  animation-fill-mode: none; 
+  animation-play-state: running;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bread ol {
+    list-style: none;
+    margin-left: -35px;
+    margin-top: 15px;
+}
+
+.bread li {
+    display: inline;
+}
+
+.bread li::after {
+    content: "->";
+    color: black;
+}
+
+.bread li:last-child::after {
+    content: "";
+    color: black;
+}
+
+hr {
+    margin-top: -25px;
+    padding-left:20px;
+  margin-left:-100px;
+}
+
+.under_hagu {
+    position: relative;
+   
+}
+
+
+.hagu1 {
+  width:300px;
+    position: absolute;
+    right:-120px;
+    top:-80px;
+    overflow:no-display;
+
+
+  animation-name: rotation1;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+
+  animation-iteration-count: infinite;　
+  animation-direction: alternate;
+  animation-fill-mode: none; 
+  animation-play-state: running;
+}
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0deg);
+  }
+100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.hagu2 {
+   width:200px;
+    position: absolute;
+    right:150px;
+    top:0px;
+    overflow:no-display;
+
+  animation-name: rotation2;
+  animation-duration: 11.3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+
+  animation-iteration-count: infinite;　
+  animation-direction: reverse;
+  animation-fill-mode: none; 
+  animation-play-state: running;
+}
+@keyframes rotation2 {
+  0% {
+    transform: rotate(10deg);
+  }
+100% {
+    transform: rotate(-370deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.hagu3 {
+   width:80px;
+    margin-left:-30px;
+   margin-bottom:-30px;
+
+  animation-name: rotation2;
+  animation-duration: 11.3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+
+  animation-iteration-count: infinite;　
+  animation-direction: reverse;
+  animation-fill-mode: none; 
+  animation-play-state: running;
+}
+
+/* =========================================picture */
+
+/* =========================================picture */
+
+/* =========================================blender */
+
+.waku {
+    border: 10px double black;
+    overflow-x: scroll;
+}
+
+/* =========================================unity   */
+
+.uni div {
+    border: 10px double black;
+    width: 500px;
+    border-radius: 20px;
+}
+.uni:hover{
+    background-color:dimgray;
+    color:white;
+}
+.uni {
+    float: left;
+}
+
+/* ====================================unity works  */
+
+.sim {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+

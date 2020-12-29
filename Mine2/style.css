@@ -1,0 +1,122 @@
+
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  
+}
+header{
+  height:7.5vh;
+  display:flex;
+  background:#202020;
+}
+.name{
+  width:200px;
+  font-size:20px;
+  
+}
+ul{
+  list-style: none;
+  display: flex;
+
+}
+.name{
+  background-color: yellow;
+  color:#808080;
+}
+
+.list li{
+  width: 200px;
+  
+  text-align: center;
+  background-color: #202020;
+  padding:0;
+  color:white;
+  
+  margin-right: 2px;
+}
+
+a  {
+  color: #d0d0d0;
+  margin:0 auto;
+  text-decoration: none;
+  vertical-align:middle;
+}
+
+img{
+
+  width:100vw;
+  height:92.5vh;
+  object-fit: cover;
+ 
+animation: anime 10s infinite linear;
+
+}
+
+@keyframes anime{
+  from{
+    filter:hue-rotate(0);
+  }to{
+    filter:hue-rotate(360deg);
+  }
+}
+
+
+#text1{
+  position: absolute;
+  font-size:50px;
+  color:gray;
+  z-index:10;
+  animation:text1anime 0.1s infinite linear;
+  transform-origin:right center;
+  left:40vw;
+top:40vh;
+  
+}
+
+#text2{
+  position: absolute;
+  font-size:50px;
+  color:gray;
+  z-index:10;
+  animation:text2anime 0.1s infinite linear;
+  transform-origin:left center;
+  left:55vw;
+top:40vh;
+  
+}
+
+
+@keyframes text1anime{
+  0%{
+    
+    filter:hue-rotate(0deg);
+    transform:rotate(-47deg);
+
+  }
+  50%{
+  filter: opacity(0%);
+  }
+  100%{
+   
+    filter:hue-rotate(30deg);
+    transform:rotate(-50deg);
+  }
+}
+
+
+@keyframes text2anime{
+  0%{
+    
+    filter:hue-rotate(0deg);
+    transform:rotate(77deg);
+  }
+  50%{
+    filter: opacity(0%);
+  }
+  100%{
+    filter:hue-rotate(30deg);
+    transform:rotate(75deg);
+  }
+}

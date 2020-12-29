@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="概要(70-80字)">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <title>jquery test</title>
+</head>
+
+<body>
+    <script>
+        $(function() {
+            $('.dan').mouseover(function() {
+                $(".dan").css("color", "red");
+                $(".gtext").empty();
+                $(".gtext").text("failed !!!!!");
+                $(".gtext").css("color", "red");
+            });
+        });
+
+    </script>
+
+
+
+
+    <h6 style="color:green;">
+        Avoid "danger" and go down.
+        Reload page if you want to try again
+    </h6>
+    <hr size="10px" color="black">
+    <h6 style="color:white;background-color:black;">level 3 (final)</h6>
+    <hr size="10px" color="black">
+
+
+
+
+
+
+    <div class="box3 dan">danger</div>
+    <div class="box2">dangeer</div>
+    
+    <div class="box3">denger</div>
+    <div class="box2">donger</div>
+    
+    <div class="box3">dangor</div>
+    <div class="box2 dan">danger</div>
+    
+    <div class="box3">danper</div>
+    <div class="box2">banger</div>
+    
+    <div class="box3 dan">danger</div>
+    <div class="box2">danqer</div>
+    
+    <div class="box3 dan">danger</div>
+    <div class="box2">dangeer</div>
+    
+    <div class="box3">denger</div>
+    <div class="box2 dan">danger</div>
+    
+    <div class="box3">donger</div>
+    <div class="box2">dangor</div>
+
+
+
+
+
+    <hr size="10px" color="black">
+    <h6 class="gtext"> GOAL !!!<br>
+        You completed this game !!　
+        
+    </h6>
+     <h6> <a href="main.html">[back to home]</a></h6>
+
+
+
+</body>
+
+</html>

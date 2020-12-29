@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+body{
+    font-size:100px;
+}
+h6{
+    font-size:40px;
+}
+
+h6{
+    margin-top:-10px;
+    margin-bottom:-10px;
+    color:green;
+}
+
+hr{
+     margin-top:10px;
+    margin-bottom:-10px;
+}
+
+
+/*level 2-------------------------------------------*/
+
+
+
+.box {
+  width: 300px;
+  height: 300px;
+ 
+    display:inline-block;
+
+  animation-name: rotation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none; 
+  animation-play-state: running;
+
+}
+
+
+
+@keyframes rotation {
+  0% {
+
+  }
+
+100% {
+    transform:  rotate(360deg);
+    }
+}
+
+
+/*level 3-------------------------------------------*/
+
+
+
+.box3 {
+  width: 300px;
+  height: 100px;
+ 
+  
+
+  animation-name: rotation3;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none; 
+  animation-play-state: running;
+
+}
+
+
+
+@keyframes rotation3 {
+  0% {
+  }
+100% {
+    transform:translateX(1000px);
+    }
+}
+
+
+
+.box2 {
+  width: 300px;
+  height: 100px;
+ 
+   
+
+  animation-name: rotation2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: none; 
+  animation-play-state: running;
+
+}
+
+
+
+@keyframes rotation2 {
+  0% {
+  }
+100% {
+    transform:translateX(1000px);
+    }
+}
+
+
+
+
+
+
+
+
