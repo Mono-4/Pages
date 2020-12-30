@@ -1,122 +1,161 @@
+@charset "utf-8";
 
-*
-{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
-  box-sizing:border-box;
-  
+  box-sizing: border-box;
 }
-header{
-  height:7.5vh;
-  display:flex;
-  background:#202020;
-}
-.name{
-  width:200px;
-  font-size:20px;
-  
-}
-ul{
-  list-style: none;
-  display: flex;
-
-}
-.name{
-  background-color: yellow;
-  color:#808080;
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  background: black;
+  font-size: 16px;
 }
 
-.list li{
-  width: 200px;
-  
+body::after {
+  animation: anime 10s infinite linear;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: white;
+  background: black;
+  line-height: 50px;
   text-align: center;
-  background-color: #202020;
-  padding:0;
-  color:white;
-  
-  margin-right: 2px;
+  animation: title 2s infinite alternate;
 }
+a {
+  color: pink;
+}
+/*-------------*/
 
-a  {
-  color: #d0d0d0;
-  margin:0 auto;
+img {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  animation: image 10s infinite linear;
+}
+a {
   text-decoration: none;
-  vertical-align:middle;
 }
-
-img{
-
-  width:100vw;
-  height:92.5vh;
-  object-fit: cover;
- 
-animation: anime 10s infinite linear;
-
-}
-
-@keyframes anime{
-  from{
-    filter:hue-rotate(0);
-  }to{
-    filter:hue-rotate(360deg);
+@keyframes title {
+  from {
+    filter: blur(2.5px);
+  }
+  to {
+    filter: blur(1px);
   }
 }
 
-
-#text1{
+@keyframes image {
+  from {
+    filter: hue-rotate(0);
+    background-blend-mode: hue;
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+.text {
   position: absolute;
-  font-size:50px;
-  color:gray;
-  z-index:10;
-  animation:text1anime 0.1s infinite linear;
-  transform-origin:right center;
-  left:40vw;
-top:40vh;
-  
+  font-size: 3em;
+  transform-origin: left;
+  color: white;
+  background: rgba(1, 1, 1, 0.3);
+}
+.text:nth-child(2) {
+  animation: t_anime 1s infinite linear;
+  left: calc(50% - 400px);
+  top: calc(50% - 200px);
+  color: yellow;
+  transform-origin: right;
+
+  transform: rotate(30deg);
 }
 
-#text2{
-  position: absolute;
-  font-size:50px;
-  color:gray;
-  z-index:10;
-  animation:text2anime 0.1s infinite linear;
-  transform-origin:left center;
-  left:55vw;
-top:40vh;
-  
+.text:nth-child(3) {
+  animation: t_anime 1s infinite linear;
+  left: calc(50% - 400px);
+  top: calc(50% - 100px);
+  color: red;
+  transform-origin: right;
+
+  transform: rotate(-30deg);
+  animation-delay: 0.1s;
 }
 
+.text:nth-child(4) {
+  animation: t_anime 1s infinite linear;
+  left: calc(50% - 500px);
+  top: calc(50% - 50px);
+  color: blue;
+  transform-origin: right;
 
-@keyframes text1anime{
-  0%{
-    
-    filter:hue-rotate(0deg);
-    transform:rotate(-47deg);
+  transform: rotate(-60deg);
+  animation-delay: 0.2s;
+}
 
+.text:nth-child(5) {
+  animation: t_anime 1s infinite linear;
+  left: calc(50% - 400px);
+  top: calc(50% - 100px);
+  color: cyan;
+  transform-origin: right;
+
+  transform: rotate(-40deg);
+  animation-delay: 0.3s;
+}
+
+.text:nth-child(6) {
+  animation: t_anime 1s infinite linear;
+  left: calc(50% - 300px);
+  top: calc(50% - 150px);
+  color: pink;
+  transform-origin: right;
+
+  transform: rotate(15deg);
+  animation-delay: 0.4s;
+}
+
+@keyframes t_anime {
+  0% {
+    filter: hue-rotate(0deg);
   }
-  50%{
-  filter: opacity(0%);
+  50% {
+    opacity: 0;
   }
-  100%{
-   
-    filter:hue-rotate(30deg);
-    transform:rotate(-50deg);
+  100% {
+    filter: hue-rotate(360deg);
   }
 }
 
-
-@keyframes text2anime{
-  0%{
-    
-    filter:hue-rotate(0deg);
-    transform:rotate(77deg);
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 2em;
   }
-  50%{
-    filter: opacity(0%);
+  .text:nth-child(2) {
+    transform: none;
+    top: 100px;
+    left: 5%;
   }
-  100%{
-    filter:hue-rotate(30deg);
-    transform:rotate(75deg);
+  .text:nth-child(3) {
+    transform: none;
+    top: 200px;
+    left: 5%;
+  }
+  .text:nth-child(4) {
+    transform: none;
+    top: 300px;
+    left: 5%;
+  }
+  .text:nth-child(5) {
+    transform: none;
+    top: 400px;
+    left: 5%;
+  }
+  .text:nth-child(6) {
+    transform: none;
+    top: 500px;
+    left: 5%;
   }
 }
