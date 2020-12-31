@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Caveat", cursive;
+  font-size: 15px;
+
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(rgb(0, 72, 255), rgb(178, 235, 245));
+}
+
+main {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 50px;
+
+  animation: main 5s linear alternate infinite;
+
+  border: 4px black solid;
+  border-radius: 300px 20px 300px 20px/ 20px 300px 20px 300px;
+  background: linear-gradient(white, rgb(205, 205, 205));
+}
+@keyframes main {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+h3 {
+  font-size: 2em;
+
+  animation: h3 1s alternate infinite;
+  text-align: center;
+}
+@keyframes h3 {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ul {
+  margin: 20px 0;
+  font-size: 2em;
+
+  list-style: none;
+}
+a {
+  text-decoration: none;
+
+  color: cyan;
+}
+/*--------------------------*/
+
+.g1 {
+  position: relative;
+  top: calc(100px - 40px);
+  left: calc(100vw / 2 - 600px / 2 - 40px);
+
+  width: 100px;
+  height: 100px;
+
+  animation: a1 1s alternate infinite;
+  z-index: 100;
+}
+.g1:hover {
+  transform: scale(1.2);
+  animation: a1 0.5s alternate infinite;
+}
+@keyframes a1 {
+  from {
+    transform: rotate(-60deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.g2,
+.g2::after,
+.g2::before {
+  position: absolute;
+  top: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: "";
+
+  background: red;
+}
+
+.g3 {
+  font-size: 3em;
+  line-height: 100px;
+
+  position: absolute;
+  top: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: "";
+  transform: rotate(45deg);
+
+  color: white;
+  background: red;
+  z-index: 101;
+}
+
+.g2:after {
+  transform: rotate(22.5deg);
+}
+
+.g2:before {
+  display: flex;
+  transform: rotate(-22.5deg);
+  position: absolute;
+}
+
+/*--------------------------*/
+.star1 {
+  font-size: 8em;
+  color: white;
+  position: absolute;
+  animation: star 5s linear infinite;
+}
+.star2 {
+  font-size: 5em;
+  color: white;
+  position: absolute;
+  left: 90vw;
+  animation: star 5s linear infinite;
+}
+
+.star3 {
+  font-size: 3em;
+  color: white;
+  position: absolute;
+  left: 80vw;
+
+  animation: star 5s linear infinite;
+}
+
+.star4 {
+  font-size: 4em;
+  color: white;
+  position: absolute;
+  left: 20vw;
+  animation: star 5s linear infinite;
+}
+@keyframes star {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------*/
+.iceman {
+  margin: 100px;
+  text-align: center;
+}
+.ice1 {
+  position: relative;
+
+  display: flex;
+
+  width: 100px;
+  height: 100px;
+  margin: 0 25px -30px 25px;
+
+  cursor: pointer;
+  transition: 0.5s;
+  animation: ice_head 1s alternate infinite;
+
+  border: black 0.1px solid;
+  border-radius: 100vh;
+  background: rgb(245, 245, 245);
+  z-index: 3;
+}
+.ice1:hover {
+  animation: ice_head 0.3s alternate infinite;
+}
+
+.face {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  border: black 0.1px solid;
+  border-radius: 100vh;
+}
+.cap {
+  position: absolute;
+  top: -80px;
+  left: 30px;
+
+  transform: rotate(20deg);
+
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  border-left: 50px solid transparent;
+}
+.face:nth-child(2) {
+  top: 20px;
+  left: 10px;
+
+  margin: 10px;
+
+  background: black;
+}
+
+.face:nth-child(3) {
+  top: 20px;
+  right: 10px;
+
+  margin: 10px;
+
+  background: black;
+}
+
+.face:nth-child(4) {
+  top: 40px;
+  left: calc(100px / 2 - 20px / 2);
+
+  width: 20px;
+  height: 20px;
+
+  background: orange;
+  z-index: 1;
+}
+.ice2 {
+  position: relative;
+
+  width: 150px;
+  height: 150px;
+
+  border: black solid 0.1px;
+  border-radius: 100vh;
+  background: rgb(245, 245, 245);
+  z-index: 2;
+}
+.hand {
+  position: absolute;
+  top: 50%;
+
+  width: 100px;
+  height: 10px;
+
+  border-radius: 10px;
+  background: brown;
+}
+.hand:nth-of-type(4) {
+  right: -80px;
+  transform-origin: left;
+  animation: r_hand 1s alternate infinite;
+}
+
+.hand:nth-of-type(5) {
+  left: -80px;
+  transform-origin: right;
+  animation: l_hand 1s alternate infinite;
+}
+.button {
+  width: 15px;
+  height: 15px;
+  margin: 15px auto;
+
+  border: black 0.1px solid;
+  border-radius: 100vh;
+  background: red;
+}
+
+.button:nth-child(1) {
+  margin-top: 40px;
+}
+
+@keyframes r_hand {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(-50deg);
+  }
+}
+@keyframes l_hand {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(50deg);
+  }
+}
+@keyframes ice_head {
+  from {
+    transform: rotate(-10deg) translate(-10px, 0);
+  }
+  to {
+    transform: rotate(10deg) translate(10px, 0);
+  }
+}
+/*--------------------------*/
+.ground {
+  position: absolute;
+  bottom: 0;
+
+  width: 100vw;
+  height: 50px;
+
+  border-radius: 80vw 50vw 0 0/20px 10px 0 0;
+  background: rgb(245, 245, 245);
+  opacity: 1;
+}
+/*--------------------------*/
+footer {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+}
+#snow {
+  font-size: 2em;
+
+  position: fixed;
+  top: -5%;
+  /*アニメーションさせる*/
+
+  animation: anim 5s linear infinite;
+
+  color: snow;
+  text-shadow: 5vw -100px 0, 10vw -400px 0, 20vw -500px 0, 30vw -580px 0,
+    39vw -250px 0, 42vw -340px 0, 56vw -150px 0, 63vw -180px 0, 78vw -220px 0,
+    86vw -320px 0, 94vw -170px 0;
+}
+
+@keyframes anim {
+  100% {
+    top: 150%;
+
+    color: transparent;
+  }
+}
+#m_snow {
+  font-size: 3em;
+
+  cursor: pointer;
+}
+#snow.after_snow {
+  font-size: 10em;
+}
+.capmove {
+  animation: capmove 1s alternate;
+}
+
+@keyframes capmove {
+  0% {
+    transform: rotate(30deg);
+    transform: translate(-30px, -50px);
+  }
+  100% {
+    transform: rotate(-30deg);
+    transform: translate(-30px, -0px);
+  }
+}

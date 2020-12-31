@@ -1,0 +1,41 @@
+@media screen and (max-width: 480px) {
+  body {
+    height: 120vh;
+    font-size: 14px;
+  }
+  .happy {
+    stroke: red;
+    stroke-width: 4px;
+    width: 85vw;
+    filter: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .class {
+    width: 100px;
+    height: 100px;
+  }
+  main {
+    width: 100vw;
+    margin: 0;
+    padding: 10px;
+    top: 0;
+  }
+  #cow {
+    display: absolute;
+    transform: translate(0, -50px);
+    animation: 10s cow_move linear infinite forwards;
+    z-index: 1000px;
+  }
+
+  @keyframes cow_move {
+    form {
+    }
+    to {
+      transform: translate(-100vw, 0px);
+    }
+  }
+  .ground {
+    height: 70px;
+  }
+}
