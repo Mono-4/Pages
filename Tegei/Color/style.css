@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.thema {
+  font-size: 400px;
+  position: relative;
+  z-index: 6;
+  color: rgb(0, 0, 0);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  position: absolute;
+  opacity: 50%;
+  z-index: 5;
+}
