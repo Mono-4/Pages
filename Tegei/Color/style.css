@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: black;
 }
 .thema {
-  font-size: 400px;
+  font-size: 600px;
   position: relative;
   z-index: 6;
   color: rgb(0, 0, 0);

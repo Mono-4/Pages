@@ -33,7 +33,7 @@ a {
 img {
   width: 100vw;
   height: calc(100vh - 50px);
-  animation: image 8s infinite linear;
+  animation: image 5s infinite linear;
 }
 a {
   text-decoration: none;
