@@ -4,7 +4,7 @@
 
 ### ページリンク
 
-https://yusuihoshino.github.io/Pages/Tegei/SmartPhone
+https://Mono-4.github.io/Pages/Tegei/SmartPhone
 
 ### ボタン解説
 
