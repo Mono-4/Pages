@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-​
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
-​
+
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-​
+
 </head>
-​
+
 <body>
-​
+
  <div id="AA">
-​
+
  </div>
 <br>
  <div id="BB">
-​
+
  </div>
 <br>
  <div id="CC">
-​
+
  </div>
-​
+
  <form name="sample1">
 ルール：ボタンを全て  <input type="button" buttonid="rule" value="O" onclick="check2(this.value)">に変える。<br>
 　　　　ボタンを押すと、そのボタンと隣接するボタン全ての「Ｏ」と「Ｘ」が入れ替わる。
   
  </form> 
-​
+
   <script language="javascript" type="text/javascript">
   for (let i = 0; i < 3; i++) {
     const input = document.createElement('input');
@@ -41,14 +41,14 @@
     input.setAttribute('value','X');
     AA.appendChild(input);    
   }
-​
+
   for (let i = 0; i < 3; i++) {
     const input = document.createElement('input');
     input.setAttribute('type','button');
     input.setAttribute('value','X');
     BB.appendChild(input);    
   }
-​
+
   for (let i = 0; i < 3; i++) {
     const input = document.createElement('input');
     input.setAttribute('type','button');
@@ -87,7 +87,7 @@ check();
 if(flag==0){
 count ++;
 }
-​
+
     });
   }   
  function hanten(A) {
@@ -131,7 +131,7 @@ count ++;
    }
  }
   </script>
-​
+
   <script language="javascript" type="text/javascript">
     var a = 0;
     var result = document.getElementById("result");
@@ -159,9 +159,5 @@ count ++;
     }
   </script>
 </body>
-​
+
 </html>
-Collapse
-
-
-
