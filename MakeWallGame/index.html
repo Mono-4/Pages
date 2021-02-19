@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-
+  UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make Wall Game</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css" media="screen and (max-width:480px)">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Make Wall Game</h1>
+    <div class="timer"></div>
+    <div class="result"></div>
+
+    <div class="phase">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+    <h2></h2>
+    <table class="field">
+    </table>
+    <input type="button" value="RESTART" class=input1>
+
+
+
+
+
+
+    <ul class="menu">
+      <li><a href="#" class="active" data-id="t1">Overview</a></li>
+      <li><a href="#" data-id="t2">Flow</a></li>
+      <li><a href="#" data-id="t3">Detailed rules</a></li>
+    </ul>
+
+    <section class="content active" id="t1">
+      ２人用のターン制ボードゲームです。４つのステップがあり、ボード上部の数字で確認できます。また、その下に各ステップでの指示が書かれます。
+    </section>
+
+    <section class="content" id="t2">
+      ４つのステップの流れは、以下の通りです。
+      <ol>
+        <li>[赤]３マス動く</li>
+        <li>[赤]壁を作る</li>
+        <li>[青]３マス動く</li>
+        <li>[青]壁を作る</li>
+      </ol>
+
+      ４番目のステップ後に、四方が壁に囲まれていたら負けです。赤、青の両方とも壁に囲まれていた場合は、引き分けです。
+    </section>
+
+    <section class="content" id="t3">
+      <ul>
+        <li>３マス動く</li>
+        動ける方向は縦、横に１マスずつです。壁を通り抜けることはできません。同じマスに戻った場合も３マスにカウントされます。
+        <li>衝突</li>
+        互いの駒は衝突せず、重なっている場合は緑色で表示されます。
+        <li>壁を作る</li>
+        どこにでも１マスだけ作ることができます。
+        <li>壁</li>
+        ゲーム開始時には、ボードの周りは壁に囲まれています。
+
+      </ul>
+    </section>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

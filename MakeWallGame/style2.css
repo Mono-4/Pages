@@ -1,0 +1,61 @@
+@charset "utf-8";
+:root {
+  --edge_long: 75px;
+  --edge_short: 15px;
+}
+table {
+  margin: 0px auto;
+}
+body {
+  font-size: 16px;
+}
+.phase li {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+.menu li a {
+  width: 120px;
+}
+/* -------- */
+.mass {
+  width: var(--edge_long);
+  height: var(--edge_long);
+}
+
+.wall1 {
+  width: var(--edge_short);
+  height: var(--edge_long);
+}
+
+.wall2 {
+  width: var(--edge_long);
+  height: var(--edge_short);
+}
+
+.waste {
+  width: var(--edge_short);
+  height: var(--edge_short);
+}
+/*  */
+.p1:before {
+  width: var(--edge_long);
+  height: var(--edge_long);
+}
+
+.p2:before {
+  width: var(--edge_long);
+  height: var(--edge_long);
+}
+
+.p3:before {
+  width: var(--edge_long);
+  height: var(--edge_long);
+}
+
+.content.active {
+  padding: 30px;
+  display: block;
+  height: 400px;
+  margin: 0 auto 50px auto;
+}
