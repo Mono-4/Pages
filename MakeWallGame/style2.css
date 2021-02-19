@@ -3,21 +3,20 @@
   --edge_long: 75px;
   --edge_short: 15px;
 }
-table {
-  margin: 0px auto;
-}
+/* 枠組み */
 body {
   font-size: 16px;
 }
+table {
+  margin: 0px auto;
+}
+/* 上の説明 */
 .phase li {
   width: 80px;
   height: 80px;
   line-height: 80px;
 }
-.menu li a {
-  width: 120px;
-}
-/* -------- */
+/* td要素の状態 */
 .mass {
   width: var(--edge_long);
   height: var(--edge_long);
@@ -37,7 +36,7 @@ body {
   width: var(--edge_short);
   height: var(--edge_short);
 }
-/*  */
+/* プレイヤー */
 .p1:before {
   width: var(--edge_long);
   height: var(--edge_long);
@@ -51,6 +50,10 @@ body {
 .p3:before {
   width: var(--edge_long);
   height: var(--edge_long);
+}
+/* 説明 */
+.menu li a {
+  width: 120px;
 }
 
 .content.active {
