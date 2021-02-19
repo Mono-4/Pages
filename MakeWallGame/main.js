@@ -19,7 +19,7 @@ li[0] = document.querySelector("ul li:nth-child(1)");
 li[1] = document.querySelector("ul li:nth-child(2)");
 li[2] = document.querySelector("ul li:nth-child(3)");
 li[3] = document.querySelector("ul li:nth-child(4)");
-// プレイヤーのいち
+// プレイヤーの位置
 let posi = [
   {
     i: 1,
