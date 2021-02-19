@@ -134,7 +134,7 @@ function click() {
         mark_remove();
         mark_mass(0);
         //勝敗が付いたら、離脱
-        if (judge() >= 0) stage = 100;
+        if (judge() >= 1) stage = 100;
       }
       break;
   }
@@ -270,7 +270,7 @@ function judge() {
   if (x === 0 && y === 0) return 0;
   else if (x === 1 && y === 1) return 1;
   else if (x === 1) return 2;
-  else return 2;
+  else return 3;
 }
 //周りが全てwallなら1を返す
 function are_there_4wall(p) {
