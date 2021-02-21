@@ -108,6 +108,8 @@ function click() {
         stage++;
         if (are_there_4wall(1)) {
           stage++;
+          mark_remove();
+          mark_wall();
         }
       }
 
@@ -134,7 +136,10 @@ function click() {
         mark_remove();
         mark_mass(0);
         //勝敗が付いたら、離脱
-        if (judge() >= 1) stage = 100;
+        if (judge() >= 1) {
+          mark_remove();
+          stage = 100;
+        }
       }
       break;
   }

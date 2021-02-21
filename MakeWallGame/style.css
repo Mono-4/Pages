@@ -51,13 +51,13 @@ td:hover {
 }
 
 .wall1 {
-  height: var(--edge_long);
-  width: var(--edge_short);
+  height: var(--edge_long,100px);
+  width: var(--edge_short,20px);
 }
 
 .wall2 {
   height: 20px;
-  width: var(--edge_long);
+  width: var(--edge_long,100px);
 }
 
 .nowall {
@@ -77,21 +77,12 @@ td:hover {
 .mass {
   background: radial-gradient(#5b5458, #3a3839);
   height: 100px;
-  width: var(--edge_long);
+  width: var(--edge_long,100px);
 }
 
 .mark {
   animation: mark 1s infinite alternate;
   transition: 0.2s;
-}
-
-.waste {
-  background: transparent;
-  box-shadow: 0 0 0 transparent;
-  cursor: default;
-  height: var(--edge_short);
-  pointer-events: none;
-  width: var(--edge_short);
 }
 
 @keyframes mark {
@@ -102,6 +93,14 @@ td:hover {
   100% {
     box-shadow: 0 0 20px orange;
   }
+}
+.waste {
+  background: transparent;
+  box-shadow: 0 0 0 transparent;
+  cursor: default;
+  height: var(--edge_short,20px);
+  pointer-events: none;
+  width: var(--edge_short,20px);
 }
 
 .mass {
@@ -258,9 +257,11 @@ h2 {
 .active ol {
   list-style-position: inside;
 }
-
 .active li {
   margin: 10px;
+}
+dt {
+  margin-top: 10px;
 }
 
 .menu li a.active {
