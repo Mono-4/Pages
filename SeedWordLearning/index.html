@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+</style>
+
+<body>
+  <h1>高速反復学習サイト</h1>
+  <section>
+
+    <h2>ランダム単語帳</h2>
+    <div class="cards"></div>
+    <input type="button" class="bu" value="Randomise">
+  </section>
+  <section>
+    <h2>フラッシュ単語</h2>
+    <div class="screen1"></div>
+    <div class="screen2"></div>
+  </section>
+  <footer>
+    <textarea type="text" class="in">ja1 en1 ja2 en2 ja3 en3 ja4 en4</textarea>
+    <div class="explain">
+      <ul>
+        <li>どうしても覚えられない数単語を覚えるためのサイトです。</li>
+        <li>上の入力欄に、「apple りんご」のように、単語とそれに結びつけて覚えたい単語を連続で入力します。</li>
+        <li>単語同士の間は１つの半角空白、もしくは全角空白が必要です</li>
+        <li>
+          Randomiseボタンを押すと、その内容でカードが上部に作られます。表示されているの先に入力されている単語ですが、ホバーすることで対応する単語を表示できます。Randomiseボタンを押すごとに、ランダムに配置されます。
+        </li>
+        <li>Randomiseボタンを押すと、中部に2秒ずつ単語が表示されます。表示順番は上部のカードと同じです。</li>
+        <li> スマホサイズには対応していません。</li>
+        <li> リロード、ページを離れると入力した内容は削除されます。</li>
+      </ul>
+    </div>
+    <script src="main.js"></script>
+  </footer>
+</body>
+
+</html>
