@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    body {
+      background-color: rgb(26, 25, 25);
+      color: white;
+      font-family: 'Zen Dots', cursive;
+      text-align: center;
+
+    }
+
+    li {
+      font-size: 25px;
+    }
+
+    .box1,
+    .box2 {
+      height: 30px;
+      width: 100%;
+      margin: 30px auto 0;
+      border-radius: 25px;
+      background: linear-gradient(to right, red 90%, black 91%);
+    }
+
+    ul {
+      margin: 0 auto;
+      list-style: none;
+      text-align: left;
+      border-right: solid 3px white;
+      border-left: solid 3px white;
+      border-radius: 10px;
+      padding: 20px 70px;
+    }
+
+    h1,
+    h2 {
+      margin: 30px 0;
+      color: yellow;
+      font-size: 30px;
+    }
+
+    .sub {
+      margin-top: 40px;
+      text-align: center;
+      color: skyblue;
+    }
+
+    .item {
+      width: 500px;
+      margin: 30px;
+    }
+
+    .item1 {
+      margin: 0 auto;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>- - Time - -</h1>
+  <div class="item item1">
+    <h2>now</h2>
+    <ul>
+      <li class="c1"></li>
+      <li class="c2"></li>
+    </ul>
+  </div>
+  <div class="container">
+
+    <div class="item">
+      <h2>Time to next birthday</h2>
+      <ul>
+        <li class="c5"></li>
+        <li class="c6"></li>
+        <li class="sub">Total</li>
+        <li class="c7"></li>
+        <li class="c8"></li>
+        <li class="c9"></li>
+        <li class="c10"></li>
+        <li>
+          <div class="box1"></div>
+        </li>
+      </ul>
+
+
+    </div>
+
+    <div class="item">
+      <h2>Time to 40 years old</h2>
+      <ul>
+        <li class="c11"></li>
+        <li class="c12"></li>
+        <li class="sub">Total</li>
+        <li class="c13"></li>
+        <li class="c14"></li>
+        <li class="c15"></li>
+        <li class="c16"></li>
+        <li>
+          <div class="box2"></div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <p>ただし、Totalの１ヶ月は３０日分として計算</p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
