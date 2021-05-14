@@ -16,10 +16,13 @@ html body {
 
 html body h2 {
   font-size: 3rem;
+  margin: 100px 0 50px;
+  color: #D46877;
 }
 
 html body h3 {
   font-size: 2.2rem;
+  margin: px 0;
 }
 
 html body p {
@@ -82,6 +85,13 @@ html body li {
   border-radius: 50%;
   text-decoration: none;
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#page-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container {
@@ -91,22 +101,16 @@ html body li {
   text-align: center;
 }
 
+.container p {
+  line-height: 4rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .container .title {
-  height: 150px;
-}
-
-.container a {
-  color: black;
-  text-decoration: none;
-  border: solid 1px black;
-  padding: 3px 5px;
-  border-radius: 100px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.container a:hover {
-  background-color: white;
+  width: 100%;
+  max-width: 400px;
 }
 
 .container .graph {
@@ -119,10 +123,6 @@ html body li {
 .container .shadow_gray {
   -webkit-box-shadow: 1px 1px 20px rgba(84, 84, 84, 0.5);
           box-shadow: 1px 1px 20px rgba(84, 84, 84, 0.5);
-}
-
-.container h3 {
-  margin: 25px 0;
 }
 
 .container .back_white {
@@ -157,46 +157,70 @@ html body li {
           align-items: center;
 }
 
-.container ul {
+.container .back_white a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border: solid 1px black;
+  padding: 10px 10px;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 50px 0;
+}
+
+.container .back_white a:hover {
+  background-color: #F3ECE1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container .back_white ul {
   display: block;
   width: 200px;
   text-align: left;
   margin: 20px auto;
 }
 
-.container table {
+.container .back_white table {
   margin: 20px auto;
 }
 
-.container table th {
+.container .back_white table th {
   color: #D46877;
 }
 
-.container table th,
-.container table td {
+.container .back_white table th,
+.container .back_white table td {
   border: solid 1px black;
   padding: 10px;
 }
 
-.container h2 {
-  margin: 100px 0 50px;
-  color: #D46877;
+.container .contact a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border: solid 1px black;
+  padding: 10px 10px;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 50px 0;
 }
 
-.container p {
-  line-height: 4rem;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+.container .contact a:hover {
+  background-color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.container .trainer {
+.container .member .trainer {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
 
-.container .trainer .profile {
+.container .member .trainer .profile {
   display: inline-block;
   background-color: white;
   border-radius: 5px;
@@ -206,23 +230,28 @@ html body li {
   margin: 0 30px;
 }
 
-.container .trainer .profile img {
+.container .member .trainer .profile img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-.container .trainer .profile ul {
+.container .member .trainer .profile ul {
+  display: block;
+  width: 300px;
   margin-top: 30px;
 }
 
 .container footer small {
   display: block;
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .container footer ul {
+  display: block;
+  width: 400px;
   text-align: left;
-  width: 300px;
+  margin: 20px auto;
 }
 /*# sourceMappingURL=style.css.map */
