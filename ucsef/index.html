@@ -1,133 +1,170 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <!-- アイコン -->
+  <meta name="description" content="ucsefのサービス「10分で変わる」の公式HPです">
   <title>ucsef</title>
-  <link rel="icon" type="image/png" href="ucsef_icon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Noto+Sans+JP:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/c">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/cb3fb5ba36.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <a href="#" id="page-top"><i class="blogicon-chevron-up">トップに戻る</i></a>
-  <div class="container">
-    <img class="title" src="title.png" alt="変わる30分">
-    <section>
-      <h2>「変わる30分」について</h2>
+  <header>
+    <div class="header-container">
+      <div class="header-inner">
+        <img class="ucsef-logo" src="images/logo-text.png" srcset="images/logo-text.png 1x,images/logo-text.png 2x"
+          alt="ucsef">
+        <nav>
+          <div class="container nav-container">
+            <ul class="navbar">
+              <li><a href="#overview">概要</a></li>
+              <li><a href="#staff">担当員</a></li>
+              <li><a href="#plan">プラン・料金</a></li>
+              <li><a href="#footer">ucsefとは</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="right-parts">
+          <a href="https://twitter.com/ucsef3" class="twitter-link" target=”_blank”>
+            <i class="fab fa-twitter-square"></i>
+          </a>
+
+          <button class="menu-btn" id="mobile-menu">
+            <img src="images/ menu-btn.png" alt="メニューボタン">
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <nav class="nav-humberger">
+      <ul class="navbar">
+        <li><a href="#overview">概要</a></li>
+        <li><a href="#staff">担当員</a></li>
+        <li><a href="#plan">プラン・料金</a></li>
+        <li><a href="#footer">ucsefとは</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--/.w1000-->
+  <!-- ======================= -->
+  <div class="key-visual">
+    <img src="images/title.svg" alt="新サービス変わる30分">
+
+  </div>
+  <!-- ======================= -->
+  <section class="overview" id="overview">
+    <div class="container overview-container">
+      <h2>変わる30分</h2>
       <p>自己管理できていますか？<br>
         変わる３０分は、朝起きられない、宿題やレポートの期限に間に合わない、忘れ物をしてしまう、何もかも後回しにしてしまうなどの悩みを抱えている方に向けたサービスです。<br>
         変わる３０分では、お客様の生活をサポートしつつ、自分の生活を管理する習慣をつけるサービスを行っております。<br>
         ご自身の生活を豊かにし、生きやすくするためにともに頑張りましょう。</p>
-    </section>
-    <section>
-      <div class="back_white shadow_gray">
-        <h2>内容</h2>
-        <p>担当員とZoomを用いて
-          １回３０分面談を行います。<br>
-          これによって、計画を立てて、行動し、反省する習慣を養います。</p>
-        <h3>内容</h3>
-        <div class="graph_box">
-          <ol>
-            <li>前日の反省</li>
-            <li>計画</li>
-            <li>相談</li>
-          </ol>
-          <img class="graph" src="graph.png" alt="10分15分5分の円グラフ">
-        </div>
-        <h3>必要な物</h3>
-        <ul>
-          <li>zoomが開けるPC</li>
-          <li>カメラ</li>
-          <li>マイク</li>
-          <li>メールアドドレス</li>
-        </ul>
+      <a href="pdf/flayer.pdf" target="_blank">チラシを見てみる</a>
+    </div><!-- /overview -->
+  </section>
+  <section class="staff" id="staff">
+    <div class="container staff-container">
+      <h2><i class="fas fa-user-alt"></i> 担当員</h2>
+      <div class="flex-box">
 
-        <h3>コースと料金
-        </h3>
-        <p>初月は無料で、金額は今後変更されることがあります。<br>時間に関しては担当員と相談して決定します。</p>
-        <table>
-          <tr>
-            <th>コース</th>
-            <th>月額料金（税込み）</th>
-          </tr>
-          <tr>
-            <td>週１コース</td>
-            <td>1,000円</td>
-          </tr>
-          <tr>
-            <td>週２コース</td>
-            <td>1,000円</td>
-          </tr>
-          <tr>
-            <td>週３コース</td>
-            <td>1,000円</td>
-          </tr>
-          <tr>
-            <td>週４コース</td>
-            <td>1,000円</td>
-          </tr>
-          <tr>
-            <td>週５コース</td>
-            <td>1,000円</td>
-          </tr>
-        </table>
-        <a href="flayer.pdf">チラシ</a>
+        <div class="main-intro">
+          <img src="images/selfimage.jpg" alt="齋藤涼馬">
+          <h3>齋藤 涼馬</h3>
 
-      </div>
-    </section>
-    <section class="member">
-      <h2>指導員</h2>
-      <div class="trainer">
-        <div class="profile  shadow_gray">
-          <h3>さいとうりょうま</h3>
-          <img src="https://picsum.photos/id/1/200/300" alt="">
-          <ul>
-            <li>長岡大学生</li>
-            <li></li>
-            <li></li>
-          </ul>
         </div>
-        <div class="profile  shadow_gray">
-          <h3>さいとうりょうま</h3>
-          <img src="https://picsum.photos/id/1/200/300" alt="">
+
+        <div class="staff-talk">
           <ul>
-            <li>長岡大学生</li>
-            <li></li>
-            <li></li>
+            <li> <span class="intro-bold">20歳大学生</li>
+            <li> <span class="intro-bold">趣味：</span>YouTubeをみること</li>
+            <li><span class="intro-bold">好きなこと：</span>人と話すこと</li>
           </ul>
+
+          <p>
+            私は小学生の時から宿題を忘れ、忘れ物、すぐに行動ができない、片付けができないなど自己管理能力の欠如がコンプレックスでした。この悩みを解決するために様々な方法を試しました。さらに、病院にも行き、薬も試しました。<br>
+            そんな中、私がたどり着いた答えは他人に頼るということでした。親や友人に情報を共有し行動を促してもらったり、忘れ物や予定の確認を一緒にすることにより、格段に自己管理ができるようになりました。何より、1人でがんばるよりも楽でした。<br>
+            これらの経験から私は、同じような悩みを抱えている方々に、他人に頼って自分は楽をして、生活を改善するサービスを提供する価値があると感じ、このサービスを開始しました。
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section><!-- /introduction -->
 
-    <section class="contact">
-      <h2>登録・ご相談</h2>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeUVy4Fm48ZE7PTaLpzLlE9lPCCexJHMoC8y_S9_qVj9n4PHQ/viewform?usp=sf_link">Google
-        Form</a>
-    </section>
-    <footer>
-      <section>
-        <h2>ucsefとは</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eveniet sequi ullam ratione nam, hic
-          eaque
-          modi, reprehenderit laudantium doloremque ex dolor dolorem quos obcaecati aut consequatur debitis fugiat eius?
-        </p>
-        <ul>
-          <li>設立：2021..</li>
-          <li>社員数：</li>
-          <li>mail：ucsefcom@gmail.com</li>
-        </ul>
-      </section>
+  <section class="plan" id="plan">
+    <div class="container plan-container">
+      <h2><i class="far fa-sticky-note"></i> プラン</h2>
+      <div class="text">
+        <p>担当員とZoomを用いて １回25分面談を行います。
+          計画を立てて、行動し、反省する習慣を養います。具体的な割当は以下の通りです。</p>
+        <ol>
+          <li>前日の反省（5分）</li>
+          <li>計画（１０分）</li>
+          <li>相談（１０分）</li>
+        </ol>
+      </div>
+      <h2><i class="fas fa-coins"></i> 料金</h2>
+      <div class="text">
+        <p>初月は無料で、金額は今後変更されることがあります。
+          週に何回対応するかは、担当員と相談後に決定します。</p>
+      </div>
+    </div>
+  </section>
 
-      <small>© 2021 ucsef</small>
-    </footer>
-  </div>
+
+
+  <section class="contact">
+    <div class="container container-contact">
+      <h2><i class="fas fa-check"></i> 申し込み方法</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUVy4Fm48ZE7PTaLpzLlE9lPCCexJHMoC8y_S9_qVj9n4PHQ/viewform?usp=sf_link"
+        target="_blank">こちらから登録</a>
+      <p>後日メールからご連絡します。<br>ご相談もここから受付ます。
+      </p>
+    </div>
+  </section>
+
+
+
+  <footer id="footer">
+    <div class="container footer-container">
+      <h2>ucsefとは</h2>
+      <p>学生の生活の質の向上を目的に設立した学生団体です。<br>弊社ではお客様に寄り添って、一人一人が満足できるサービスの展開を目指します。
+      </p>
+      <p class="footer-copyright">
+        &copy; 2021 ucsef
+      </p>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    'use strict';
+    $(function () {
+      $(".nav-humberger").hide();
+      $(".menu-btn").click(function () {//メニューボタンをクリックしたとき
+        $(".nav-humberger").toggle(300);//0.3秒で表示したり非表示にしたりする
+      });
+    });
+
+
+  </script>
+
 
 </body>
 
