@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+$main-color: #17afe5;
+$text-black: #525252;
+$header-height: 50px;
+$fee-bg: #f5f5f5;
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝全体
+html {
+	font-size: 62, 5%;
+}
+body {
+	font-size: 1.4em;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+}
+a {
+	color: $text-black;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+// ===================共通装飾
+.title {
+	text-align: center;
+	font-size: 3rem;
+	color: $text-black;
+	margin-top: 100px;
+}
+.sub-title {
+	text-align: center;
+	font-size: 1.2rem;
+	color: $main-color;
+	margin-bottom: 100px;
+}
+// ===================ヘッダー
+.header {
+	background: white;
+	&__container {
+		margin: 0 20px;
+		display: flex;
+		justify-content: space-between;
+
+		align-items: center;
+	}
+	&__title {
+		width: 200px;
+		height: 50px;
+	}
+	&__breadcrumb {
+		height: 40px;
+		&-list {
+			display: inline-block;
+			margin: 5px 30px 0;
+		}
+		&-link {
+			font-size: 0.9rem;
+			&:hover {
+				border-bottom: 1px solid black;
+			}
+		}
+	}
+	&__twitterlink {
+		.twitter-logo {
+			height: $header-height;
+		}
+	}
+}
+// ===================キービジュアル
+.keyvisual {
+	background-image: url("https://picsum.photos/300/200");
+	background-size: cover;
+	height: 100vh;
+	&__title {
+		color: white;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 3rem;
+	}
+	&__paragraph {
+		color: white;
+		text-align: center;
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&__arrow {
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 50px;
+	}
+}
+.about-us {
+	&__paragraph {
+		max-width: 800px;
+		padding: 80px 50px;
+		margin: 100px auto;
+		box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+}
+.fee {
+	background: $fee-bg;
+	border-top: 1px solid $fee-bg;
+	// marginの相殺を防ぐ
+
+	&__flex {
+		display: flex;
+		justify-content: center;
+	}
+	.fee-card {
+		width: 250px;
+		height: 350px;
+		background: white;
+		text-align: center;
+		margin: 50px 20px;
+		&__icon {
+			width: 100px;
+			height: 100px;
+			margin: 20px 0 50px;
+		}
+		&__title {
+			font-size: 1.5rem;
+			line-height: 3rem;
+		}
+		&__sub-title {
+			font-size: 0.9rem;
+		}
+	}
+}
+.sample {
+	&__link {
+		display: block;
+		width: 500px;
+		height: 90px;
+		margin: 30px auto;
+		text-align: center;
+		border-radius: 10px;
+		&:hover {
+			background: orange;
+		}
+		&--web {
+			background: rgb(177, 238, 230);
+		}
+		&--writing {
+			background: rgb(255, 192, 247);
+		}
+		.link-container {
+			padding-top: 10px;
+			&__sub-title {
+				font-size: 1rem;
+			}
+			&__title {
+				font-size: 2rem;
+			}
+			&__arrow {
+			}
+		}
+	}
+}
+
+// bem

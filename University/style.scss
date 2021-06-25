@@ -1,0 +1,31 @@
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.header1 {
+  &__logo{
+
+  }
+  &__right {
+    .top {
+      &__list {
+        display: inline-block;
+      }
+
+      &__link {
+      }
+    }
+
+    .bottom {
+      &__list {
+        display: inline-block;
+        color:red;
+        border:2px solid $background-green;
+      }
+
+      &__link { color:red;}
+    }
+  }
+}
