@@ -86,19 +86,26 @@ li {
 
 .header__breadcrumb-link--red {
   display: block;
-  background: red;
   color: white;
-  height: 2rem;
-  width: 200px;
-  line-height: 2rem;
+  display: block;
+  width: 180px;
+  height: 2.2rem;
+  background: #fd3535;
+  line-height: 2.2rem;
   text-align: center;
-  border-radius: 1rem;
+  margin: 0 auto;
+  border-radius: 100px;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .header__breadcrumb-link--red:hover {
-  border-bottom: none;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__twitterlink .twitter-logo {
@@ -144,9 +151,9 @@ li {
 .about-us__paragraph {
   max-width: 800px;
   padding: 80px 50px;
-  margin: 100px auto;
-  -webkit-box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+  margin: 150px auto;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), -1px -1px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), -1px -1px 4px 0px rgba(0, 0, 0, 0.25);
   font-size: 1.2rem;
   line-height: 2rem;
 }
@@ -195,17 +202,18 @@ li {
   background: #17afe5;
   color: white;
   display: block;
-  width: 250px;
+  width: 270px;
   height: 3rem;
+  background: #17afe5;
   line-height: 3rem;
   text-align: center;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  margin: 100px auto;
+  margin-bottom: 100px;
 }
 
 .service__btn:hover {
@@ -270,6 +278,7 @@ li {
 .member .member-card {
   width: 150px;
   height: 300px;
+  overflow: hidden;
   background: white;
   text-align: center;
   margin: 50px 10px;
@@ -280,6 +289,13 @@ li {
 .member .member-card__icon {
   width: 150px;
   height: 150px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.member .member-card__icon:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .member .member-card__title {
@@ -292,5 +308,10 @@ li {
   font-size: 0.8rem;
   text-align: left;
   padding: 20px;
+}
+
+.footer {
+  height: 200px;
+  background: #525252;
 }
 /*# sourceMappingURL=style.css.map */
