@@ -1,9 +1,15 @@
 @charset "UTF-8";
+/*
+Theme Name: ucsef
+Description: ucsefのオリジナルテーマです。
+Version: 1.0
+Author: MonoLog
+*/
 /* ========== すべて共通 ========== */
 html,
 body {
   font-size: 16px;
-  font-family: 'Kiwi Maru', serif;
+  font-family: "Kiwi Maru", serif;
   color: #393939;
   background: white;
   scroll-behavior: smooth;
@@ -155,7 +161,7 @@ header .header-container .header-inner .right-parts {
 
 header .header-container .header-inner .right-parts .twitter-link {
   font-size: 2rem;
-  color: #08A3F0;
+  color: #08a3f0;
   padding-right: 10px;
 }
 
@@ -198,8 +204,8 @@ header .header-container .header-inner .right-parts .menu-btn {
 
 /* ========== キービジュアル ========== */
 .key-visual {
-  background: -webkit-gradient(linear, left top, right top, from(#F6D365), to(#FDA085));
-  background: linear-gradient(90deg, #F6D365 0%, #FDA085 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#f6d365), to(#fda085));
+  background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
   padding-top: 0;
   padding-bottom: 50px;
 }
@@ -257,8 +263,8 @@ header .header-container .header-inner .right-parts .menu-btn {
 /* ========== 自己紹介 ========== */
 .staff {
   padding: 100px 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#A1C4FD), to(#C2E9FB));
-  background: linear-gradient(90deg, #A1C4FD 0%, #C2E9FB 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#a1c4fd), to(#c2e9fb));
+  background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .staff .staff-container h2 {
@@ -321,7 +327,7 @@ header .header-container .header-inner .right-parts .menu-btn {
 }
 
 .staff .staff-container .flex-box .staff-talk ul .intro-bold {
-  color: #D77480;
+  color: #d77480;
   font-weight: 500;
 }
 
@@ -427,7 +433,7 @@ header .header-container .header-inner .right-parts .menu-btn {
 footer {
   background: #a4a4a4;
   color: white;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 footer .footer-container {

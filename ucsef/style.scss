@@ -9,16 +9,16 @@ Author: MonoLog
 /* ========== すべて共通 ========== */
 html,
 body {
-  font-size: 16px;
-  font-family: 'Kiwi Maru', serif;
-  color: #393939;
-  background: white;
-  scroll-behavior: smooth;
+	font-size: 16px;
+	font-family: "Kiwi Maru", serif;
+	color: #393939;
+	background: white;
+	scroll-behavior: smooth;
+	// ===============
 }
 
 * {
-  box-sizing: border-box;
-
+	box-sizing: border-box;
 }
 
 body,
@@ -30,477 +30,447 @@ h3,
 h4,
 ul,
 figure {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 p,
 td,
 th,
 li {
-  line-height: 1.8;
+	line-height: 1.8;
 }
 
 img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /* 共通の見出し */
 .container {
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 1000px;
 }
 
 h2 {
-  font-size: 2rem;
-  padding-bottom: 40px;
+	font-size: 2rem;
+	padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  h2 {
-    font-size: 3rem;
-  }
+	h2 {
+		font-size: 3rem;
+	}
 
-  .container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+	.container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 
 /* ========== ヘッダー ========== */
 header {
-  background: rgb(255, 255, 255);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  box-shadow: 0 1px 2px gray;
+	background: rgb(255, 255, 255);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	box-shadow: 0 1px 2px gray;
 
-  .header-container {
-    padding-left: 10px;
-    padding-right: 10px;
+	.header-container {
+		padding-left: 10px;
+		padding-right: 10px;
 
-    .header-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+		.header-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 
+			.ucsef-logo {
+				width: 120px;
+				padding: 5px 0;
+			}
 
-      .ucsef-logo {
-        width: 120px;
-        padding: 5px 0;
-      }
+			nav {
+				display: none;
+				flex: 1 1 auto;
+				height: 100%;
 
+				ul {
+					display: flex;
+					justify-content: space-around;
 
+					li {
+						flex: 1 1 auto;
+						text-align: center;
+						list-style-type: none;
 
-      nav {
-        display:none;
-        flex: 1 1 auto;
-        height: 100%;
+						+ li {
+							border-left: 1px solid gray;
+						}
 
+						a {
+							color: black;
+							text-decoration: none;
+							display: block;
+							transition: all 0.03s;
+							font-size: 1rem;
 
-        ul {
-          display: flex;
-          justify-content: space-around;
+							&:hover {
+								transform: scale(1.1);
+							}
+						}
+					}
+				}
+			}
 
-          li {
-            flex: 1 1 auto;
-            text-align: center;
-            list-style-type: none;
+			.right-parts {
+				display: flex;
+				align-items: center;
 
-            +li {
-              border-left: 1px solid gray;
-            }
+				.twitter-link {
+					font-size: 2rem;
+					color: #08a3f0;
+					padding-right: 10px;
+				}
 
+				.menu-btn {
+					width: 2rem;
+					height: 2rem;
+					margin-top: 2px;
 
-            a {
-              color: black;
-              text-decoration: none;
-              display: block;
-              transition: all 0.03s;
-              font-size: 1rem;
-
-              &:hover {
-                transform: scale(1.1);
-              }
-
-            }
-          }
-        }
-      }
-
-      .right-parts {
-        display: flex;
-        align-items: center;
-
-
-        .twitter-link {
-          font-size: 2rem;
-          color: #08A3F0;
-          padding-right: 10px;
-        }
-
-        .menu-btn {
-          width: 2rem;
-          height: 2rem;
-          margin-top: 2px;
-
-          background: white;
-          border: 1px solid gray;
-          border-radius: 4px;
-          background-size: contain;
-        }
-      }
-    }
-  }
-
+					background: white;
+					border: 1px solid gray;
+					border-radius: 4px;
+					background-size: contain;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
-  header {
-    .header-container {
-      padding-left: 20px;
-      padding-right: 20px;
+	header {
+		.header-container {
+			padding-left: 20px;
+			padding-right: 20px;
 
-      .ucsef-logo {
-        width: 120px;
-        padding: 10px 0;
+			.ucsef-logo {
+				width: 120px;
+				padding: 10px 0;
 
-        .twitter-link {
-          font-size: 3rem;
-        }
-      }
+				.twitter-link {
+					font-size: 3rem;
+				}
+			}
 
-      .menu-btn {
-        display: none;
+			.menu-btn {
+				display: none;
+			}
 
-
-      }
-
-      nav {
-        display: block !important;
-      }
-    }
-  }
-
+			nav {
+				display: block !important;
+			}
+		}
+	}
 }
 
 /* ========== ナビゲーション ========== */
 
-
 @media screen and (min-width: 768px) {
-  .navigation {
-    .navbar{
-      display:none;
-    }
-  }
+	.navigation {
+		.navbar {
+			display: none;
+		}
+	}
 }
-
 
 /* ========== キービジュアル ========== */
 .key-visual {
-  background: linear-gradient(90deg, #F6D365 0%, #FDA085 100%);
-  padding-top: 0;
-  padding-bottom: 50px;
+	background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+	padding-top: 0;
+	padding-bottom: 50px;
 
-  img {
-    display: block;
-    border-radius: 12px;
-    max-width: 300px;
-    padding-top: 100px;
-    margin: 0 auto;
-  }
+	img {
+		display: block;
+		border-radius: 12px;
+		max-width: 300px;
+		padding-top: 100px;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (min-width: 768px) {
-  .key-visual {
-
-    img {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-  }
+	.key-visual {
+		img {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+	}
 }
 
 /* ========== 概要 ========== */
 .overview {
+	.overview-container {
+		padding-top: 100px;
+		padding-bottom: 100px;
 
+		p {
+			line-height: 3rem;
 
-  .overview-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+			span {
+				font-weight: 100;
+				// ======
+			}
+		}
 
+		a {
+			display: block;
+			text-decoration: none;
+			color: white;
+			background: red;
+			width: 180px;
+			height: 3rem;
+			line-height: 3rem;
+			text-align: center;
+			margin: 80px auto 0 auto;
+			border-radius: 50px;
+			transition: all 0.3s;
 
-    p {
-      line-height: 3rem;
-
-      span {
-        font-weight: 100;
-        // ======
-      }
-    }
-
-    a {
-      display: block;
-      text-decoration: none;
-      color: white;
-      background: red;
-      width: 180px;
-      height: 3rem;
-      line-height: 3rem;
-      text-align: center;
-      margin: 80px auto 0 auto;
-      border-radius: 50px;
-      transition: all 0.3s;
-
-      &:hover {
-        background: transparent;
-        color: red;
-        border: 1px solid red;
-      }
-    }
-  }
+			&:hover {
+				background: transparent;
+				color: red;
+				border: 1px solid red;
+			}
+		}
+	}
 }
 
 /* ========== 自己紹介 ========== */
 .staff {
-  padding: 100px 5px;
-  background: linear-gradient(90deg, #A1C4FD 0%, #C2E9FB 100%);
-  ;
+	padding: 100px 5px;
+	background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+	.staff-container {
+		h2 {
+			color: white;
+		}
 
-  .staff-container {
-    h2 {
-      color: white;
-    }
+		.flex-box {
+			background: white;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			justify-content: space-between;
+			border-radius: 4px;
+			box-shadow: 1px 1px 4px gray;
 
-    .flex-box {
-      background: white;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: space-between;
-      border-radius: 4px;
-      box-shadow: 1px 1px 4px gray;
+			.main-intro {
+				width: 300px;
 
-      .main-intro {
-        width: 300px;
+				img {
+					max-width: 250px;
+					display: block;
+					padding-top: 20px;
+					margin: 0 auto;
+					border-radius: 200px;
+				}
 
-        img {
-          max-width: 250px;
-          display: block;
-          padding-top: 20px;
-          margin: 0 auto;
-          border-radius: 200px;
-        }
+				h3 {
+					font-size: 2rem;
+					font-weight: 300;
+					padding: 30px 0;
+					text-align: center;
+				}
+			}
 
-        h3 {
-          font-size: 2rem;
-          font-weight: 300;
-          padding: 30px 0;
-          text-align: center;
-        }
-      }
+			.staff-talk {
+				background: white;
+				border-top: 1px solid rgb(189, 189, 189);
+				border-radius: 4px;
+				max-width: 600px;
+				top: 100px;
+				left: 400px;
 
+				padding: 30px;
+				margin-bottom: 10px;
 
-      .staff-talk {
+				ul {
+					list-style-position: inside;
+					padding-bottom: 10px;
 
-        background: white;
-        border-top: 1px solid rgb(189, 189, 189);
-        border-radius: 4px;
-        max-width: 600px;
-        top: 100px;
-        left: 400px;
+					.intro-bold {
+						color: #d77480;
+						font-weight: 500;
+					}
+				}
 
-        padding: 30px;
-        margin-bottom: 10px;
-
-        ul {
-          list-style-position: inside;
-          padding-bottom: 10px;
-
-          .intro-bold {
-            color: #D77480;
-            font-weight: 500;
-          }
-        }
-
-        p {
-          line-height: 2rem;
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }
+				p {
+					line-height: 2rem;
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
-  .staff {
-    padding-left: 30px;
-    padding-right: 30px;
+	.staff {
+		padding-left: 30px;
+		padding-right: 30px;
 
-    .container {
-      .flex-box {
-        flex-flow: row;
+		.container {
+			.flex-box {
+				flex-flow: row;
 
-        .main-intro {
-          flex: 1 1 auto;
-          width: 300px;
+				.main-intro {
+					flex: 1 1 auto;
+					width: 300px;
 
-          img {
-            width: 250px;
-            display: block;
-            padding: 0;
-          }
-        }
+					img {
+						width: 250px;
+						display: block;
+						padding: 0;
+					}
+				}
 
-        .staff-talk {
-          border-left: 1px solid rgb(189, 189, 189);
+				.staff-talk {
+					border-left: 1px solid rgb(189, 189, 189);
 
-          flex: 1 1 auto;
-          background: white;
-          top: 50px;
-          left: 300px;
+					flex: 1 1 auto;
+					background: white;
+					top: 50px;
+					left: 300px;
 
-          padding: 30px;
+					padding: 30px;
 
-          h2 {}
+					h2 {
+					}
 
-          ul {}
+					ul {
+					}
 
-          p {}
-
-
-        }
-
-      }
-    }
-  }
+					p {
+					}
+				}
+			}
+		}
+	}
 }
 
 .plan {
-  background: pink;
+	background: pink;
 
-  .plan-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+	.plan-container {
+		padding-top: 100px;
+		padding-bottom: 100px;
 
-    h2 {
-      padding-top: 0px;
-      padding-bottom: 0px;
-    }
+		h2 {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
 
-    .text {
-      background: white;
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 50px;
-      border-radius: 4px;
-      box-shadow: 1px 1px 4px gray;
-      list-style-position: inside;
+		.text {
+			background: white;
+			max-width: 800px;
+			margin: 20px auto;
+			padding: 50px;
+			border-radius: 4px;
+			box-shadow: 1px 1px 4px gray;
+			list-style-position: inside;
 
-      li {
-        padding-top: 20px;
-      }
-
-    }
-  }
+			li {
+				padding-top: 20px;
+			}
+		}
+	}
 }
 
 .contact {
-  text-align: center;
+	text-align: center;
 
-  .container-contact {
-    padding-top: 80px;
-    padding-bottom: 80px;
+	.container-contact {
+		padding-top: 80px;
+		padding-bottom: 80px;
 
-    a {
-      display: block;
-      text-decoration: none;
-      color: white;
-      background: red;
-      width: 180px;
-      height: 3rem;
-      line-height: 3rem;
-      text-align: center;
-      margin: 30px auto 30px auto;
-      border-radius: 50px;
-      transition: all 0.3s;
+		a {
+			display: block;
+			text-decoration: none;
+			color: white;
+			background: red;
+			width: 180px;
+			height: 3rem;
+			line-height: 3rem;
+			text-align: center;
+			margin: 30px auto 30px auto;
+			border-radius: 50px;
+			transition: all 0.3s;
 
-      &:hover {
-        background: transparent;
-        color: red;
-        border: 1px solid red;
-      }
-    }
-  }
+			&:hover {
+				background: transparent;
+				color: red;
+				border: 1px solid red;
+			}
+		}
+	}
 }
-
-
-
-
 
 /* ========== フッター ========== */
 footer {
-  background: rgb(164, 164, 164);
-  color: white;
-  font-family: 'Noto Sans JP', sans-serif;
+	background: rgb(164, 164, 164);
+	color: white;
+	font-family: "Noto Sans JP", sans-serif;
 
-  .footer-container {
-    padding-top: 50px;
-    padding-bottom: 10px;
+	.footer-container {
+		padding-top: 50px;
+		padding-bottom: 10px;
 
-    h2 {
-      font-size: 1.5rem;
-      padding-bottom: 20px;
-    }
+		h2 {
+			font-size: 1.5rem;
+			padding-bottom: 20px;
+		}
 
-    p {
-      padding-bottom: 30px;
-    }
-  }
-
+		p {
+			padding-bottom: 30px;
+		}
+	}
 }
 // ==================
 
-.nav-humberger{
-    background-color:transparent;
-    width:250px;
-    position:absolute;
-      top:45px;
-      right:0px;
-    .navbar{
+.nav-humberger {
+	background-color: transparent;
+	width: 250px;
+	position: absolute;
+	top: 45px;
+	right: 0px;
+	.navbar {
+		background: white;
+		border-radius: 4px;
+		box-shadow: 1px 1px 4px gray;
+		li {
+			list-style-position: inside;
+			list-style: none;
+			padding: 15px;
+			text-align: center;
 
-      
-      background:white;
-      border-radius: 4px;
-      box-shadow: 1px 1px 4px gray;;
-    li{
-      list-style-position: inside;
-      list-style: none;
-      padding:15px;
-      text-align: center;
-
-      +li{
-        border-top:1px solid gray;
-
-      }
-      a{
-        margin:0 auto;
-        display: block;
-        width:200px;
-        color:black;
-        text-decoration: none;
-      }
-    }
-    }
+			+ li {
+				border-top: 1px solid gray;
+			}
+			a {
+				margin: 0 auto;
+				display: block;
+				width: 200px;
+				color: black;
+				text-decoration: none;
+			}
+		}
+	}
 }
