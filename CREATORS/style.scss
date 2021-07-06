@@ -47,7 +47,7 @@ li {
 	color: $main-color;
 	margin-bottom: 100px;
 }
-@mixin btn($bg, $w, $h, $r) {
+btn($bg, $w, $h, $r) {
 	color: white;
 	display: block;
 	width: $w;
@@ -67,7 +67,7 @@ li {
 // ===================ヘッダー
 .header {
 	background: white;
-	&__container {
+	&__inner {
 		margin: 0 20px;
 		display: flex;
 		justify-content: space-between;
