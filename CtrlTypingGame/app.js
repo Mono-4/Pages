@@ -32,8 +32,7 @@ function mistake() {
 }
 
 document.body.addEventListener("keydown", (event) => {
-	if (event.ctrlKey) {
-	} else if (event.key === "p" && event.ctrlKey && q == question[0]) {
+	if (event.key === "p" && event.ctrlKey && q == question[0]) {
 		init();
 	} else if (event.key === "f" && event.ctrlKey && q == question[1]) {
 		init();
@@ -41,8 +40,6 @@ document.body.addEventListener("keydown", (event) => {
 		init();
 	} else if (event.key === "b" && event.ctrlKey && q == question[3]) {
 		init();
-	} else {
-		mistake();
 	}
 });
 
