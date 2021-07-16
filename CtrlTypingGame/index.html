@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ctrlでカーソル移動の練習</title>
+		<style type="text/css">
+			body {
+				background: linear-gradient(rgb(151, 151, 151), rgb(204, 204, 206));
+				height: 100vh;
+
+				line-height: 1.5;
+			}
+			.main__question {
+				font-size: 5rem;
+			}
+			.header {
+				width: 500px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.header__title {
+				color: rgb(255, 255, 255);
+				width: 500px;
+				padding: 30px 0;
+				font-size: 1.5rem;
+			}
+			.main {
+				text-align: center;
+			}
+			.main__count {
+				margin-top: 50px;
+			}
+			.main__question {
+				width: 7.5rem;
+				margin: 0 auto;
+				border-radius: 4px;
+				margin-top: 100px;
+				box-shadow: inset 5px 5px 5px rgb(0, 0, 0, 0.25),
+					inset -5px -5px 5px rgb(0, 0, 0, 0.25);
+				background: rgba(0, 0, 0, 0.1);
+				border: solid 2px transparent;
+			}
+			.header__ul {
+				text-align: left;
+				width: 200px;
+				margin: 30px auto 0;
+			}
+			.question_green {
+				border: solid 2px greenyellow;
+			}
+			.question_red {
+				border: solid 2px rgb(212, 0, 255);
+			}
+		</style>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<span class="material-icons"> settings </span>
+
+		<div class="header">
+			<div class="header__title">ctrlでカーソル移動の練習</div>
+			<p>
+				矢印に対応するキーを入力してください。<br />正解すると緑色に光ります
+			</p>
+			<div class="header__rurle">
+				<div class="header__p"></div>
+				<ul class="header__ul">
+					<li class="header__list">「↑」が出たら「ctrl+p」</li>
+					<li class="header__list">「→」が出たら「ctrl+f」</li>
+					<li class="header__list">「↓」が出たら「ctrl+n」</li>
+					<li class="header__list">「←」が出たら「ctrl+b」</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main__question"></div>
+			<div class="main__count"></div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

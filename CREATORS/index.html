@@ -5,104 +5,134 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CREATORS</title>
-		<link rel="stylesheet" href="normalize.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="http://html5doctor.com/html-5-reset-stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<div id="splash">
+			<div id="splash_text"></div>
+		</div>
+		<div id="container"></div>
+
 		<header class="header">
 			<div class="header__inner">
-				<img src="https://picsum.photos/200/300" alt="" class="header__title" />
-				<ul class="header__breadcrumb">
-					<li class="header__breadcrumb-list">
-						<a href="" class="header__breadcrumb-link">Sample/サンプル</a>
+				<img class="header__title" src="images/title.png" alt="CREATORS" />
+				<ul class="menu header__menu">
+					<li class="menu__list">
+						<a href="#service" class="menu__anchor">Service/サービス</a>
 					</li>
-					<li class="header__breadcrumb-list">
-						<a href="" class="header__breadcrumb-link">Blog/ブログ</a>
+					<li class="menu__list">
+						<a href="#sample" class="menu__anchor">Sample/サンプル</a>
 					</li>
-					<li class="header__breadcrumb-list">
-						<a href="" class="header__breadcrumb-link">Fee/料金</a>
-					</li>
-					<li class="header__breadcrumb-list">
-						<a
-							href=""
-							class="header__breadcrumb-link header__breadcrumb-link--red"
-							>Contact/お問い合わせ</a
-						>
+
+					<li class="menu__list">
+						<a href="" class="menu__anchor">Fee/料金</a>
 					</li>
 				</ul>
-				<a href="" class="header__twitterlink"
-					><img src="https://picsum.photos/200/300" alt="" class="twitter-logo"
-				/></a>
+				<a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSfrVB3u53KreScmSt_xMY4RQNdclNmeTZe5WK7MiK7m1efn5w/viewform?usp=sf_link"
+					target="_black"
+					class="btn header__btn btn--round btn--hover_scale"
+				>
+					お問い合わせ
+				</a>
+				<a href="https://twitter.com/CREATORS1522" class="header__twitter-link"
+					><i class="fab fa-twitter-square header__twitter-icon"></i
+				></a>
+				<div class="header__b"></div>
 			</div>
 		</header>
 		<section class="keyvisual">
-			<h1 class="keyvisual__title">CREATORS</h1>
-			<p class="keyvisual__paragraph">誰もが続きを見たくなるものをあなたへ</p>
-			<img
-				src="https://picsum.photos/200/300"
-				alt=""
-				class="keyvisual__arrow"
-			/>
+			<div class="keyvisual__body">
+				<h1 class="keyvisual__title">CREATORS</h1>
+				<p class="keyvisual__text">誰もが続きを見たくなるものをあなたへ</p>
+				<div class="material-icons keyvisual__arrow">south</div>
+			</div>
 		</section>
 		<section class="about-us">
-			<p class="about-us__paragraph">
-				CREATORSはweb制作を行っており、誰もの目を引くホームページやブログ、ウェブ広告を作成いたします。<br />
+			<p class="about-us__inner">
+				CREATORSはweb制作を行っており、<br />誰もの目を引くホームページやブログ、ウェブ広告を作成いたします。<br />
 				8年以上の付き合いのあるメンバーがそれぞれの得意分野を担当するためよりクオリティの高いものを迅速かつ制作費用を抑えて制作することが可能です。<br />
 				オンラインで依頼を受けており、気軽に相談することができます。
 			</p>
 		</section>
-		<section class="service">
-			<h2 class="title service__title">サービス</h2>
-			<p class="sub-title service__sub-title">Service</p>
-			<div class="service__flex">
-				<div class="service-card">
-					<img
-						src="https://picsum.photos/200/300"
-						alt=""
-						class="service-card__icon"
-					/>
-					<h3 class="service-card__title">ウェブ制作</h3>
-					<p class="service-card__sub-title">なんでもやります</p>
+
+		<section class="service" id="service">
+			<div class="service__inner">
+				<h2 class="title">サービス</h2>
+				<p class="sub-title">Service</p>
+				<div class="service__flex">
+					<div class="media service__media">
+						<div class="material-icons media__icon">desktop_windows</div>
+						<div class="media__body">
+							<h3 class="media__title">ウェブ制作</h3>
+							<p class="media__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+								nam voluptates fuga eius doloremque iusto neque quod accusantium
+							</p>
+						</div>
+					</div>
+					<div class="media service__media">
+						<div class="material-icons media__icon">desktop_windows</div>
+						<div class="media__body">
+							<h3 class="media__title">ウェブ制作</h3>
+							<p class="media__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+								nam voluptates fuga eius doloremque iusto neque quod accusantium
+							</p>
+						</div>
+					</div>
+					<div class="media service__media">
+						<div class="material-icons media__icon">desktop_windows</div>
+						<div class="media__body">
+							<h3 class="media__title">ウェブ制作</h3>
+							<p class="media__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+								nam voluptates fuga eius doloremque iusto neque quod accusantium
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="service-card">
-					<img
-						src="https://picsum.photos/200/300"
-						alt=""
-						class="service-card__icon"
-					/>
-					<h3 class="service-card__title">ライティング</h3>
-					<p class="service-card__sub-title">なんでもやります</p>
-				</div>
-				<div class="service-card">
-					<img
-						src="https://picsum.photos/200/300"
-						alt=""
-						class="service-card__icon"
-					/>
-					<h3 class="service-card__title">SEO</h3>
-					<p class="service-card__sub-title">なんでもやります</p>
-				</div>
+				<a href="" class="btn service__btn btn--shadow">料金の詳細はこちら</a>
 			</div>
-			<a href="" class="btn btn__service">料金の詳細はこちら</a>
 		</section>
 
-		<section class="sample">
+		<section class="sample" id="sample">
 			<h2 class="title sample__title">Sample</h2>
 			<p class="sub-title sample__sub-title">サンプル</p>
 			<!-- 新しいものを作る -->
-			<a class="sample__link sample__link--web">
-				<div class="link-container">
-					<p class="link-container__sub-title">ウェブ制作</p>
-					<h3 class="link-container__title">Web</h3>
-					<img src="" alt="" class="link-container__arrow" />
+			<a href="./web-sample/" class="wide-button sample__wide-button">
+				<div class="wide-button__left">
+					<p class="wide-button__sub-title">ウェブ制作</p>
+					<h3 class="wide-button__title">Web</h3>
 				</div>
+				<div class="wide-button__icon material-icons">trending_flat</div>
 			</a>
-			<a class="sample__link sample__link--writing">
-				<div class="link-container">
-					<p class="link-container__sub-title">ライティング</p>
-					<h3 class="link-container__title">Web</h3>
-					<img src="" alt="" class="link-container__arrow" />
+			<a href="./web-sample/" class="wide-button sample__wide-button">
+				<div class="wide-button__left">
+					<p class="wide-button__sub-title">ライティング</p>
+					<h3 class="wide-button__title">Writing</h3>
 				</div>
+				<div class="wide-button__icon material-icons">trending_flat</div>
 			</a>
 		</section>
 
@@ -110,44 +140,64 @@
 			<h2 class="title sample__title">Member</h2>
 			<p class="sub-title sample__sub-title">メンバー</p>
 			<div class="member__flex">
-				<div class="member-card">
-					<img
-						src="https://picsum.photos/200/300"
-						alt=""
-						class="member-card__icon"
-					/>
-					<h3 class="member-card__title">sasya</h3>
-					<p class="member-card__paragraph">ライター、SEO</p>
+				<div class="card member__card">
+					<figure class="card__figure">
+						<img class="card__img" src="https://picsum.photos/200/300" alt="" />
+					</figure>
+
+					<div class="card__body">
+						<h3 class="card__title">sasya</h3>
+						<p class="card__text">ライター、SEO</p>
+					</div>
 				</div>
-				<div class="member-card">
-					<img
-						src="https://picsum.photos/200/300"
-						alt=""
-						class="member-card__icon"
-					/>
-					<h3 class="member-card__title">Kana</h3>
-					<p class="member-card__paragraph">ライター、SEO、プログラマー</p>
+				<div class="card member__card">
+					<figure class="card__figure">
+						<img class="card__img" src="https://picsum.photos/200/300" alt="" />
+					</figure>
+
+					<div class="card__body">
+						<h3 class="card__title">sasya</h3>
+						<p class="card__text">ライター、SEO</p>
+					</div>
 				</div>
-				<div class="member-card">
-					<img
-						src="https://picsum.photos/200/300"
-						alt=""
-						class="member-card__icon"
-					/>
-					<h3 class="member-card__title">matu</h3>
-					<p class="member-card__paragraph">プログラマー</p>
+				<div class="card member__card">
+					<figure class="card__figure">
+						<img class="card__img" src="https://picsum.photos/200/300" alt="" />
+					</figure>
+
+					<div class="card__body">
+						<h3 class="card__title">sasya</h3>
+						<p class="card__text">ライター、SEO</p>
+					</div>
 				</div>
-				<div class="member-card">
-					<img
-						src="https://picsum.photos/200/300"
-						alt=""
-						class="member-card__icon"
-					/>
-					<h3 class="member-card__title">Mono</h3>
-					<p class="member-card__sparagraph">プログラマー</p>
+				<div class="card member__card">
+					<figure class="card__figure">
+						<img class="card__img" src="https://picsum.photos/200/300" alt="" />
+					</figure>
+
+					<div class="card__body">
+						<h3 class="card__title">sasya</h3>
+						<p class="card__text">ライター、SEO</p>
+					</div>
 				</div>
 			</div>
 		</section>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<small class="footer__copy-write">&copy; 2021 CREATORS</small>
+		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+		<!--IE11用-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+		<!--不必要なら削除-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+		<!--不必要なら削除-->
+		<!--自作のJS-->
+		<script src="app.js"></script>
 	</body>
 </html>
