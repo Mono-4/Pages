@@ -9,10 +9,12 @@ Author: MonoLog
 /* ========== すべて共通 ========== */
 html,
 body {
-	font-size: 16px;
-	font-family: "Kiwi Maru", serif;
 	color: #393939;
 	background: white;
+
+	font-family: "Kiwi Maru", serif;
+	font-size: 16px;
+
 	scroll-behavior: smooth;
 	// ===============
 }
@@ -48,21 +50,23 @@ img {
 
 .img-responsive {
 	display: block;
+
 	max-width: 100%;
 	height: auto;
 }
 
 /* 共通の見出し */
 .container {
-	margin: 0 auto;
-	padding-left: 10px;
-	padding-right: 10px;
 	max-width: 1000px;
+	margin: 0 auto;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 h2 {
-	font-size: 2rem;
 	padding-bottom: 40px;
+
+	font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,29 +75,30 @@ h2 {
 	}
 
 	.container {
-		padding-left: 40px;
 		padding-right: 40px;
+		padding-left: 40px;
 	}
 }
 
 /* ========== ヘッダー ========== */
 header {
-	background: rgb(255, 255, 255);
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
 	z-index: 1000;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	background: rgb(255, 255, 255);
 	box-shadow: 0 1px 2px gray;
 
 	.header-container {
-		padding-left: 10px;
 		padding-right: 10px;
+		padding-left: 10px;
 
 		.header-inner {
 			display: flex;
-			justify-content: space-between;
 			align-items: center;
+			justify-content: space-between;
 
 			.ucsef-logo {
 				width: 120px;
@@ -103,6 +108,7 @@ header {
 			nav {
 				display: none;
 				flex: 1 1 auto;
+
 				height: 100%;
 
 				ul {
@@ -111,18 +117,23 @@ header {
 
 					li {
 						flex: 1 1 auto;
-						text-align: center;
+
 						list-style-type: none;
+
+						text-align: center;
 
 						+ li {
 							border-left: 1px solid gray;
 						}
 
 						a {
-							color: black;
-							text-decoration: none;
 							display: block;
+
 							transition: all 0.03s;
+							text-decoration: none;
+
+							color: black;
+
 							font-size: 1rem;
 
 							&:hover {
@@ -138,9 +149,11 @@ header {
 				align-items: center;
 
 				.twitter-link {
-					font-size: 2rem;
-					color: #08a3f0;
 					padding-right: 10px;
+
+					color: #08a3f0;
+
+					font-size: 2rem;
 				}
 
 				.menu-btn {
@@ -148,9 +161,9 @@ header {
 					height: 2rem;
 					margin-top: 2px;
 
-					background: white;
 					border: 1px solid gray;
 					border-radius: 4px;
+					background: white;
 					background-size: contain;
 				}
 			}
@@ -161,8 +174,8 @@ header {
 @media screen and (min-width: 768px) {
 	header {
 		.header-container {
-			padding-left: 20px;
 			padding-right: 20px;
+			padding-left: 20px;
 
 			.ucsef-logo {
 				width: 120px;
@@ -196,16 +209,19 @@ header {
 
 /* ========== キービジュアル ========== */
 .key-visual {
-	background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
 	padding-top: 0;
 	padding-bottom: 50px;
 
+	background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+
 	img {
 		display: block;
-		border-radius: 12px;
+
 		max-width: 300px;
-		padding-top: 100px;
 		margin: 0 auto;
+		padding-top: 100px;
+
+		border-radius: 12px;
 	}
 }
 
@@ -235,21 +251,25 @@ header {
 
 		a {
 			display: block;
-			text-decoration: none;
-			color: white;
-			background: red;
+
 			width: 180px;
 			height: 3rem;
-			line-height: 3rem;
-			text-align: center;
 			margin: 80px auto 0 auto;
-			border-radius: 50px;
+
 			transition: all 0.3s;
+			text-align: center;
+			text-decoration: none;
+
+			color: white;
+			border-radius: 50px;
+			background: red;
+
+			line-height: 3rem;
 
 			&:hover {
-				background: transparent;
 				color: red;
 				border: 1px solid red;
+				background: transparent;
 			}
 		}
 	}
@@ -258,6 +278,7 @@ header {
 /* ========== 自己紹介 ========== */
 .staff {
 	padding: 100px 5px;
+
 	background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
 	.staff-container {
 		h2 {
@@ -265,57 +286,65 @@ header {
 		}
 
 		.flex-box {
-			background: white;
 			display: flex;
-			flex-flow: column;
 			align-items: center;
+			flex-flow: column;
 			justify-content: space-between;
+
 			border-radius: 4px;
+			background: white;
 			box-shadow: 1px 1px 4px gray;
 
 			.main-intro {
 				width: 300px;
 
 				img {
-					max-width: 250px;
 					display: block;
-					padding-top: 20px;
+
+					max-width: 250px;
 					margin: 0 auto;
+					padding-top: 20px;
+
 					border-radius: 200px;
 				}
 
 				h3 {
+					padding: 30px 0;
+
+					text-align: center;
+
 					font-size: 2rem;
 					font-weight: 300;
-					padding: 30px 0;
-					text-align: center;
 				}
 			}
 
 			.staff-talk {
-				background: white;
-				border-top: 1px solid rgb(189, 189, 189);
-				border-radius: 4px;
-				max-width: 600px;
 				top: 100px;
 				left: 400px;
 
-				padding: 30px;
+				max-width: 600px;
 				margin-bottom: 10px;
+				padding: 30px;
+
+				border-top: 1px solid rgb(189, 189, 189);
+				border-radius: 4px;
+				background: white;
 
 				ul {
-					list-style-position: inside;
 					padding-bottom: 10px;
+
+					list-style-position: inside;
 
 					.intro-bold {
 						color: #d77480;
+
 						font-weight: 500;
 					}
 				}
 
 				p {
-					line-height: 2rem;
 					font-size: 0.9rem;
+					line-height: 2rem;
 				}
 			}
 		}
@@ -324,8 +353,8 @@ header {
 
 @media screen and (min-width: 768px) {
 	.staff {
-		padding-left: 30px;
 		padding-right: 30px;
+		padding-left: 30px;
 
 		.container {
 			.flex-box {
@@ -333,24 +362,27 @@ header {
 
 				.main-intro {
 					flex: 1 1 auto;
+
 					width: 300px;
 
 					img {
-						width: 250px;
 						display: block;
+
+						width: 250px;
 						padding: 0;
 					}
 				}
 
 				.staff-talk {
-					border-left: 1px solid rgb(189, 189, 189);
-
-					flex: 1 1 auto;
-					background: white;
 					top: 50px;
 					left: 300px;
 
+					flex: 1 1 auto;
+
 					padding: 30px;
+
+					border-left: 1px solid rgb(189, 189, 189);
+					background: white;
 
 					h2 {
 					}
@@ -379,13 +411,15 @@ header {
 		}
 
 		.text {
-			background: white;
 			max-width: 800px;
 			margin: 20px auto;
 			padding: 50px;
-			border-radius: 4px;
-			box-shadow: 1px 1px 4px gray;
+
 			list-style-position: inside;
+
+			border-radius: 4px;
+			background: white;
+			box-shadow: 1px 1px 4px gray;
 
 			li {
 				padding-top: 20px;
@@ -403,21 +437,25 @@ header {
 
 		a {
 			display: block;
-			text-decoration: none;
-			color: white;
-			background: red;
+
 			width: 180px;
 			height: 3rem;
-			line-height: 3rem;
-			text-align: center;
 			margin: 30px auto 30px auto;
-			border-radius: 50px;
+
 			transition: all 0.3s;
+			text-align: center;
+			text-decoration: none;
+
+			color: white;
+			border-radius: 50px;
+			background: red;
+
+			line-height: 3rem;
 
 			&:hover {
-				background: transparent;
 				color: red;
 				border: 1px solid red;
+				background: transparent;
 			}
 		}
 	}
@@ -425,8 +463,9 @@ header {
 
 /* ========== フッター ========== */
 footer {
-	background: rgb(164, 164, 164);
 	color: white;
+	background: rgb(164, 164, 164);
+
 	font-family: "Noto Sans JP", sans-serif;
 
 	.footer-container {
@@ -434,8 +473,9 @@ footer {
 		padding-bottom: 10px;
 
 		h2 {
-			font-size: 1.5rem;
 			padding-bottom: 20px;
+
+			font-size: 1.5rem;
 		}
 
 		p {
@@ -446,30 +486,37 @@ footer {
 // ==================
 
 .nav-humberger {
-	background-color: transparent;
-	width: 250px;
 	position: absolute;
 	top: 45px;
 	right: 0px;
+
+	width: 250px;
+
+	background-color: transparent;
 	.navbar {
-		background: white;
 		border-radius: 4px;
+		background: white;
 		box-shadow: 1px 1px 4px gray;
 		li {
-			list-style-position: inside;
-			list-style: none;
 			padding: 15px;
+
+			list-style: none;
+			list-style-position: inside;
+
 			text-align: center;
 
 			+ li {
 				border-top: 1px solid gray;
 			}
 			a {
-				margin: 0 auto;
 				display: block;
+
 				width: 200px;
-				color: black;
+				margin: 0 auto;
+
 				text-decoration: none;
+
+				color: black;
 			}
 		}
 	}
